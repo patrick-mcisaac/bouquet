@@ -4,7 +4,7 @@ Table Flowers {
     color varchar
 }
 
-Table Nursuries {
+Table Nurseries {
     id int [pk]
     name varchar
     flowerId int [ref: > Flowers.id]

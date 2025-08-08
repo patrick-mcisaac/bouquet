@@ -1,0 +1,58 @@
+{
+	"flowers": [
+		{
+			"id": 1,
+			"commonName": "Rose",
+			"color": "Red"
+		},
+		{
+			"id": 2,
+			"commonName": "Sunflower",
+			"color": "Yellow"
+		},
+		{
+			"id": 3,
+			"commonName": "Lavender",
+			"color": "Purple"
+		},
+		{
+			"id": 4,
+			"commonName": "Daisy",
+			"color": "White"
+		},
+		{
+			"id": 5,
+			"commonName": "Tulip",
+			"color": "Pink"
+		}
+	],
+	"nurseries": [
+		{
+			"id": 1,
+			"name": "Sunny Acres Nursery",
+			"flowerId": [1, 3, 5]
+		},
+		{
+			"id": 2,
+			"name": "Garden Paradise",
+			"flowerId": [2, 4]
+		},
+		{
+			"id": 3,
+			"name": "Bloom & Grow",
+			"flowerId": [1, 2, 3, 4]
+		},
+		{
+			"id": 4,
+			"name": "Petal Perfect Nursery",
+			"flowerId": [3, 4, 5]
+		},
+		{
+			"id": 5,
+			"name": "Green Thumb Gardens",
+			"flowerId": [1, 2, 5]
+		}
+	],
+	"flowerRetailers": [],
+	"flowerDistributors": []
+}

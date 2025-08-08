@@ -1,0 +1,19 @@
+Table Flowers {
+    id int [pk]
+    commonName varchar
+    color varchar
+}
+
+Table Nursuries {
+    id int [pk]
+    name varchar
+    flowerId int [ref: > Flowers.id]
+}
+
+Table FlowerRetailers {
+    id int [pk]
+}
+
+Table FlowerDistributors {
+    id int [pk]
+}

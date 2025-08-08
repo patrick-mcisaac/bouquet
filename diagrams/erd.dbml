@@ -12,6 +12,10 @@ Table Nurseries {
 
 Table FlowerRetailers {
     id int [pk]
+    name varchar
+    city varchar
+    state varchar
+    address varchar
 }
 
 Table FlowerDistributors {

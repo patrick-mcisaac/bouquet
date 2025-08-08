@@ -53,6 +53,49 @@
 			"flowerId": [1, 2, 5]
 		}
 	],
-	"flowerRetailers": [],
+	"flowerRetailers": [
+		{
+			"id": 1,
+			"name": "Petal Palace",
+			"city": "Springfield",
+			"state": "Illinois",
+			"address": "123 Bloom Street"
+		},
+		{
+			"id": 2,
+			"name": "Rose Garden Shop",
+			"city": "Austin",
+			"state": "Texas",
+			"address": "456 Flower Ave"
+		},
+		{
+			"id": 3,
+			"name": "Daisy Chain Florist",
+			"city": "Portland",
+			"state": "Oregon",
+			"address": "789 Garden Lane"
+		},
+		{
+			"id": 4,
+			"name": "Tulip Time Flowers",
+			"city": "Denver",
+			"state": "Colorado",
+			"address": "321 Petal Drive"
+		},
+		{
+			"id": 5,
+			"name": "Sunflower Boutique",
+			"city": "Atlanta",
+			"state": "Georgia",
+			"address": "654 Botanical Blvd"
+		},
+		{
+			"id": 6,
+			"name": "Lavender Fields",
+			"city": "Seattle",
+			"state": "Washington",
+			"address": "987 Violet Way"
+		}
+	],
 	"flowerDistributors": []
 }

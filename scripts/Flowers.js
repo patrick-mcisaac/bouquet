@@ -1,16 +1,17 @@
+import { FlowersList } from "./FlowersList.js"
+
 export const Flowers = async () => {
-	const response = await fetch("http://localhost:8088/flowers")
-	const flowers = await response.json()
-
-	const flowersHTML = flowers
-		.map(flower => {
-			return `
+	const flowersListHTML = await FlowersList()
+	let html = `
+    <section class='flowers-section'>
         <header>
-            <h1>${flower.commonName}</h1>
+            <h1>Flowers</h1>
         </header>
-        `
-		})
-		.join("")
+		<section>
+            ${flowersListHTML}
+        </section>
+    </section>
+    `
 
-	return flowersHTML
+	return html
 }

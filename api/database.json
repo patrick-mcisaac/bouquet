@@ -29,28 +29,23 @@
 	"nurseries": [
 		{
 			"id": 1,
-			"name": "Sunny Acres Nursery",
-			"flowerId": [1, 3, 5]
+			"name": "Green Thumb Nursery"
 		},
 		{
 			"id": 2,
-			"name": "Garden Paradise",
-			"flowerId": [2, 4]
+			"name": "Sunrise Garden Center"
 		},
 		{
 			"id": 3,
-			"name": "Bloom & Grow",
-			"flowerId": [1, 2, 3, 4]
+			"name": "Valley View Nursery"
 		},
 		{
 			"id": 4,
-			"name": "Petal Perfect Nursery",
-			"flowerId": [3, 4, 5]
+			"name": "Mountain Peak Gardens"
 		},
 		{
 			"id": 5,
-			"name": "Green Thumb Gardens",
-			"flowerId": [1, 2, 5]
+			"name": "Riverside Plant Farm"
 		}
 	],
 	"flowerRetailers": [
@@ -59,43 +54,145 @@
 			"name": "Petal Palace",
 			"city": "Springfield",
 			"state": "Illinois",
-			"address": "123 Bloom Street"
+			"address": "123 Bloom Street",
+			"distributorId": 2
 		},
 		{
 			"id": 2,
 			"name": "Rose Garden Shop",
 			"city": "Austin",
 			"state": "Texas",
-			"address": "456 Flower Ave"
+			"address": "456 Flower Ave",
+			"distributorId": 1
 		},
 		{
 			"id": 3,
 			"name": "Daisy Chain Florist",
 			"city": "Portland",
 			"state": "Oregon",
-			"address": "789 Garden Lane"
+			"address": "789 Garden Lane",
+			"distributorId": 3
 		},
 		{
 			"id": 4,
 			"name": "Tulip Time Flowers",
 			"city": "Denver",
 			"state": "Colorado",
-			"address": "321 Petal Drive"
+			"address": "321 Petal Drive",
+			"distributorId": 1
 		},
 		{
 			"id": 5,
 			"name": "Sunflower Boutique",
 			"city": "Atlanta",
 			"state": "Georgia",
-			"address": "654 Botanical Blvd"
+			"address": "654 Botanical Blvd",
+			"distributorId": 3
 		},
 		{
 			"id": 6,
 			"name": "Lavender Fields",
 			"city": "Seattle",
 			"state": "Washington",
-			"address": "987 Violet Way"
+			"address": "987 Violet Way",
+			"distributorId": 2
 		}
 	],
-	"flowerDistributors": []
+	"flowerDistributors": [
+		{
+			"id": 1,
+			"name": "Petals & Blooms Wholesale",
+			"city": "Portland",
+			"state": "Oregon",
+			"address": "1245 Rose Garden Blvd"
+		},
+		{
+			"id": 2,
+			"name": "Garden Fresh Distribution Co.",
+			"city": "Miami",
+			"state": "Florida",
+			"address": "8792 Tropical Way"
+		},
+		{
+			"id": 3,
+			"name": "Mountain View Flower Supply",
+			"city": "Denver",
+			"state": "Colorado",
+			"address": "456 Alpine Ridge Drive"
+		}
+	],
+	"flowerExchanges": [
+		{
+			"id": 1,
+			"nurseryId": 1,
+			"flowerId": 1,
+			"flowerDistributorId": 1
+		},
+		{
+			"id": 2,
+			"nurseryId": 1,
+			"flowerId": 3,
+			"flowerDistributorId": 2
+		},
+		{
+			"id": 3,
+			"nurseryId": 1,
+			"flowerId": 5,
+			"flowerDistributorId": 3
+		},
+		{
+			"id": 4,
+			"nurseryId": 2,
+			"flowerId": 2,
+			"flowerDistributorId": 1
+		},
+		{
+			"id": 5,
+			"nurseryId": 2,
+			"flowerId": 4,
+			"flowerDistributorId": 2
+		},
+		{
+			"id": 6,
+			"nurseryId": 3,
+			"flowerId": 1,
+			"flowerDistributorId": 3
+		},
+		{
+			"id": 7,
+			"nurseryId": 3,
+			"flowerId": 2,
+			"flowerDistributorId": 1
+		},
+		{
+			"id": 8,
+			"nurseryId": 3,
+			"flowerId": 3,
+			"flowerDistributorId": 2
+		},
+		{
+			"id": 9,
+			"nurseryId": 4,
+			"flowerId": 4,
+			"flowerDistributorId": 3
+		},
+		{
+			"id": 10,
+			"nurseryId": 4,
+			"flowerId": 5,
+			"flowerDistributorId": 2
+		},
+		{
+			"id": 11,
+			"nurseryId": 5,
+			"flowerId": 1,
+			"flowerDistributorId": 3
+		},
+		{
+			"id": 12,
+			"nurseryId": 5,
+			"flowerId": 2,
+			"flowerDistributorId": 1
+		}
+	]
 }

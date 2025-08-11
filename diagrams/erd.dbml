@@ -7,7 +7,6 @@ Table Flowers {
 Table Nurseries {
     id int [pk]
     name varchar
-    flowerId int [ref: > Flowers.id]
 }
 
 Table FlowerRetailers {
@@ -16,8 +15,20 @@ Table FlowerRetailers {
     city varchar
     state varchar
     address varchar
+    distributorId int [ref: - FlowerDistributors.id]
 }
 
 Table FlowerDistributors {
     id int [pk]
+    name varchar
+    city varchar
+    state varchar
+    address varchar
+}
+
+Table flowerExchanges {
+    id int [pk]
+    flowerId int [ref: > Flowers.id]
+    nurseryId int [ref: > Nurseries.id]
+    flowerDistributorId int [ref: > FlowerDistributors.id]
 }

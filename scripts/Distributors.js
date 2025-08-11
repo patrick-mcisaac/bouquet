@@ -6,7 +6,7 @@ export const Distributors = async () => {
 	let html = `
     <section class='retailers-section'>
         <header>
-            <h1>Retailers</h1>
+            <h1>Distributors</h1>
         </header>
         <section>
             ${distributors}

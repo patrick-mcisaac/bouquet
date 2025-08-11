@@ -1,7 +1,12 @@
 Table Flowers {
     id int [pk]
     commonName varchar
-    color varchar
+    colorId int [ref: - Colors.id]
+}
+
+Table Colors {
+    id int [pk]
+    name varchar
 }
 
 Table Nurseries {
@@ -12,8 +17,8 @@ Table Nurseries {
 Table FlowerRetailers {
     id int [pk]
     name varchar
-    city varchar
-    state varchar
+    cityId int [ref: - Cities.id]
+    stateId int [ref: - States.id]
     address varchar
     distributorId int [ref: - FlowerDistributors.id]
 }
@@ -21,8 +26,8 @@ Table FlowerRetailers {
 Table FlowerDistributors {
     id int [pk]
     name varchar
-    city varchar
-    state varchar
+    cityId int [ref: - Cities.id]
+    stateId int [ref: - States.id]
     address varchar
 }
 
@@ -31,4 +36,14 @@ Table flowerExchanges {
     flowerId int [ref: > Flowers.id]
     nurseryId int [ref: > Nurseries.id]
     flowerDistributorId int [ref: > FlowerDistributors.id]
+}
+
+Table States {
+    id int [pk]
+    name varchar
+}
+
+Table Cities {
+    id int [pk]
+    name varchar
 }
